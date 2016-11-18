@@ -7,9 +7,8 @@
     <h1>Robert, The Full Stack Web Developer</h1>
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="index.js"></script>
-    <ul>
+    <ul id="nav">
       <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="aboutme.html">About</a></li>
     </ul>
@@ -18,8 +17,8 @@
 
   <p>
     <ul>
-      <li><a href="https://www.linkedin.com/in/robertngdeveloper">LinkedIn</a></li>
-      <li><a href="https://github.com/teachmehowtocode">Github</a></li>
+      <li><a href="https://github.com/robertngdeveloper"><img id="github" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAAB3CAMAAAAzWYybAAAAaVBMVEX///8AAAD8/Pzx8fHs7OzKysrj4+M4ODilpaX4+PiLi4vS0tLo6OhQUFARERHW1tZKSkqTk5ODg4MLCwudnZ14eHhbW1uysrJtbW0pKSm4uLhkZGTd3d1VVVXBwcEXFxcxMTEhISE/Pz9dS7BjAAADPklEQVR4nO2b2ZKCMBBFDWsAHRQVd1H//yNHSpYmiMQFsal7nkanp6rvpEl6CaMRAAAAAAAAAAAAAAAAAAAAAODTmM4Vs28vvoBjy10iMpKdtJ2+PeoObxu5QsH1t17ffnWCJ925KjZl7srhCTblXa2ZYjmwB9mOm8WmxHbfHn4S/++xWiH+/L59/BhWy9Le2Fl9+/kZnKmOWiGmgziUrI2eWiE2A1hfp3bUNuOyX19voq9WiAn3E3idCflLHp27Sb5zL/v29z1WuaLQCGYNG3Q8C4wg/7Dq2+N32OcP7iHdhczjHcHxMc2orEP20d337fPrGFEuyjduX8h5spZHx7riHOU6mcvsF35uGRl9evwWRYiKRf6VIqb4uChMg+/592EmdblNlHIn3/CsC0LxilwRfsO3DliWEloLAL+0ZXoY0Vx5On5sO6a2PHOrLTlu/Jb91iCrK7bf8e+zUAWH1uTQO+j/b34Sk8SnRq/CJtHMsZUzLv2/6NifSvuWB/0nIcullQjLp4Lh5yDuayVKZQomZNe+dUCRL4uzVtq/Pxd/EHXtWwfsCu/1mhSk7bHr2rcOiF+XG3ftWweUcjd6wbwZiNy5llxSUHCUWz67ejUOkcvx2S13Zr1zd1Xac9yZ5ZOrRaKB47lLsiqhYW4Qc45ZFcmZdZaLBAPLnJlWRG5rjWOS2QrLiqhSsc+eMWZZ71a6GW3hTEOZZzdDmesuHkSouaCWTHtVtBMp0ulIk50yS2HaiczypMBwMt2XreWpUwTPWl1EFa595tsUIbKuGdM5k3LwJRnRWzKqj3/ZThGyBsUhpEMClzQlzVNNLOcZUTYBTHvq+Vi7GqphXS3jCWA+312WScekct3EqsUy5/luUeZcNWT71aKyeEakymU9vc+DeJ3+aNrHQI3UmaKW6yGUc7t5c26qcRS57cOVX+fWcXMbDtOqXP73qopbc9HeMk3TUlLJitwh3JojubM7PalzbSqXa66sQm+8KpUgkTuUG68jep+5Se6A7jOPyG31BrnDuq1evotwV+7g3kUY5W+a1OUO8k2TFG8bRcr5G0bRQN8jSjFq5U79GwAAAAAAAAAAAAAAAAAAAAAA0OQfteMcSzqAECEAAAAASUVORK5CYII="/></a></li>
+      <li><a href="https://www.linkedin.com/in/robertngdeveloper"><img id="linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAY1BMVEUAg77///8AfbsAf7wAgb2JuNjH3OsAerp6r9S81Of6/f5Dlcfi7fUZg75Jmsl0rtMch8Amj8SYwd1/tNZgos1XnssAdbjp8/nw9vrX5/JsqdGyzuTN4++nx+DA2eo4kMSVutncEghhAAADOklEQVRoge2ba3PqIBCGYSEhJlaRJlpzs///V55EW01kQyJHyHSG94szBfu4XHY3GyD0rlrlB+JQh1zVDxr5+UwVAWDcJZgzBkSlY3ArhUvmQ0K2Q3AknNo6FBfRA7z3ZO5NYv8LjrxyO3J0A7eeuR257cGp9Da/v+Iy7cDKu8GdyaoD+8f2oqSGNbhQE4WBeedlOHc496BIzjQqgMyKssgkOBsNlpPDs13Ak/h0dS5fccm0n/UecT0cifL0CCF0u/O1BI4NHSvxs9u6DfasvQ+bWaFxaXrx4NnYWQfTjXuTOWJwb7JzsKgwME2cmwzYSFNauV7YnGxRcO0c/LESGF/UlMbOwaJFwWgAe6tgj4J3zj0Il18I9+zDc+mumtLSg7PmyE6uvARG/nF64tbgJ/vlUI+4zdFX1s2P+R2dbg4+k24Gct9Um0oVzNMwPwSdBLjMb4OCXlVf2bnq5QISR7S4FY6sSFTTNOq7zMTxlc14yXQNKgYHpPk3B2UiU0NPn9bRRSx99IKWps+i0T1KgEKaNzfnJoqxr72y42JhHQtiJCwOwBHSfAWDxJMXGl8WBTdbMBRYBnGz+nPJVM+BP3EwJFPYXtWCibYDm7mUtvM2W4GP6BPXuMv/gjHTNiRF/jrWbC3NBlxh33nWbmaebcCT63mo7YzJM2CGJ/xLNPOoO2exPfhkNtkdmJbGWXYIjo1j7RBMpStw3STlXrWTmzoymWwPrqTo0o4u/WBqAt26AJ8ecZeL7Pnx66fPh8FjW4K3o6ALGe5TTBVCO3CajUdxoptpQ9mBtfdWeL3MVEqxAp81S/AAvTE4LyswUleW2Mo2Va1swCmyWkHPOPvawnvB+kh3HbFqrKl6ZAPGHAOajm7JNNkGjK0ZVmJgw0vMd4F5joENruttFu/eC0ZTHx9gPL0N4AAO4D8FnqgIBHAAB/AfAk/WMgM4gAM4gOfA2BGCAA7gRWDmEmyqKfI80ZXd+/Md0lwg/47LT71jOYntfyqi4Ytac7O5o6NDrX9H2qFfL+IH5JizD7GcqFXAoNY7yr7a4f31riusdkFjtSsp613CWe/a0XoXrda7WubpMh3ol+l6+b0++A/uujyEvm/+RAAAAABJRU5ErkJggg=="/></a></li>
     </ul>
   </p>
 </body>

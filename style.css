@@ -1,12 +1,10 @@
-/*#container {
-  display: flex;
-}*/
-
+body {
+  text-align: center;
+}
 h1 {
   color: white;
   font-size: 40px;
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
 }
 
 html {
@@ -15,26 +13,23 @@ html {
 }
 
 ul {
-  padding: 0;
   list-style: none;
-  overflow: hidden;
-  text-align: center;
-}
-
-li {
-  float: left;
-}
-
-#container {
   display: inline-block;
-  text-align: center;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
 }
 
-li a {
-  display: inline-block;
+
+#linkedin, #github {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+li, a {
+  display: inline;
   padding: 8px 16px;
   text-decoration: none;
-  text-align: center;
 }
 
 li a:hover {
@@ -53,7 +48,7 @@ img {
   top: 100px;
 }
 
-p {
+p, h2 {
   color: white;
 }
 
